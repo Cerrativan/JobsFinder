@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/searchDialog_descriptionTextView"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:text="Description"
+        android:textAlignment="viewStart"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/searchdescription_TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchDialog_ownerTextView2" />
+
+    <Button
+        android:id="@+id/searchDialog_applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="228dp"
+        android:backgroundTint="#D31E1E"
+        android:text="Apply"
+        android:textColor="#000000"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/searchdescription_TextView"
+        android:layout_width="279dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="viewStart"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchDialog_descriptionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/searchOwner_textView" />
+
+    <TextView
+        android:id="@+id/searchDialog_salaryTextView"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:text="Salary"
+        android:textAlignment="viewStart"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/searchSalary_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchDialog_cityTextView" />
+
+    <TextView
+        android:id="@+id/searchDialog_ownerTextView2"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:text="Owner"
+        android:textAlignment="viewStart"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/searchOwner_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchDialog_salaryTextView" />
+
+    <TextView
+        android:id="@+id/searchDialog_cityTextView"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:text="City"
+        android:textAlignment="viewStart"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/searchCity_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchDialog_titleTextView" />
+
+    <TextView
+        android:id="@+id/searchDialog_titleTextView"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="Title"
+        android:textAlignment="viewStart"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/searchTitle_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/searchTitle_textView"
+        android:layout_width="279dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="viewStart"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchDialog_titleTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/searchCity_textView"
+        android:layout_width="279dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="viewStart"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchDialog_cityTextView"
+        app:layout_constraintTop_toBottomOf="@+id/searchTitle_textView" />
+
+    <TextView
+        android:id="@+id/searchSalary_textView"
+        android:layout_width="279dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="viewStart"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchDialog_salaryTextView"
+        app:layout_constraintTop_toBottomOf="@+id/searchCity_textView" />
+
+    <TextView
+        android:id="@+id/searchOwner_textView"
+        android:layout_width="279dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="viewStart"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchDialog_ownerTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/searchSalary_textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

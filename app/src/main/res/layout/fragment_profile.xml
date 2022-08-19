@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="168dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="115dp"
+        android:backgroundTint="#D31E1E"
+        android:text="Logout"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_TextView" />
+
+    <TextView
+        android:id="@+id/username_TextView"
+        android:layout_width="180dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="112dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/password_textView"
+        android:layout_width="197dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="107dp"
+        android:clickable="true"
+        android:text="Change Password"
+        android:textAlignment="center"
+        android:textColor="#00BCD4"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_TextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

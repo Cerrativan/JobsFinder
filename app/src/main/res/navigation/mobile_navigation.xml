@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.jobsfinder.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/homeToSearch_action"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/homeToPublish_action"
+            app:destination="@id/publishFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_searchDialogFragment4"
+            app:destination="@id/searchDialogFragment4" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.jobsfinder.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_searchDialogFragment4"
+            app:destination="@id/searchDialogFragment4" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.jobsfinder.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_passwordChangeFragment"
+            app:destination="@id/passwordChangeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/publishFragment"
+        android:name="com.example.jobsfinder.ui.publish.PublishFragment"
+        android:label="Publish a Job"
+        tools:layout="@layout/publish_fragment" >
+        <action
+            android:id="@+id/publishToMyAds_action"
+            app:destination="@id/myAdsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myAdsFragment"
+        android:name="com.example.jobsfinder.ui.my_ads.MyAdsFragment"
+        android:label="my_ads_fragment"
+        tools:layout="@layout/my_ads_fragment" >
+        <action
+            android:id="@+id/action_myAdsFragment_to_myAdsDialogFragment"
+            app:destination="@id/myAdsDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myAdsDialogFragment"
+        android:name="com.example.jobsfinder.ui.dialogs.MyAdsDialogFragment"
+        android:label="my_ads_dialog_fragment"
+        tools:layout="@layout/my_ads_dialog_fragment" >
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Title" />
+        <argument
+            android:name="city"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="City" />
+        <argument
+            android:name="salary"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Salary" />
+        <argument
+            android:name="description"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Description" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="Id" />
+        <argument
+            android:name="owner"
+            app:argType="string"
+            android:defaultValue="Owner" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchDialogFragment4"
+        android:name="com.example.jobsfinder.ui.dialogs.SearchDialogFragment"
+        android:label="SearchDialogFragment" >
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="Title" />
+        <argument
+            android:name="city"
+            app:argType="string"
+            android:defaultValue="City" />
+        <argument
+            android:name="salary"
+            app:argType="string"
+            android:defaultValue="Salary" />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue="Description" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="Id" />
+        <argument
+            android:name="owner"
+            app:argType="string"
+            android:defaultValue="Owner" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordChangeFragment"
+        android:name="com.example.jobsfinder.ui.password_change.PasswordChangeFragment"
+        android:label="password_change_fragment"
+        tools:layout="@layout/password_change_fragment" />
+</navigation>
